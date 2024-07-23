@@ -1,3 +1,15 @@
-console.log('is it working');
-console.log('is it working');
-console.log('is it working');
+import { createContentSections ,putsContentInWelcomeSection , putsContentDescriptionSection ,createCards} from "./modules";
+import {cardsData , contentSections} from "./data"
+import './style.css';
+
+
+
+
+
+
+createContentSections(contentSections);
+putsContentInWelcomeSection();
+putsContentDescriptionSection();
+createCards(cardsData);
+
+
