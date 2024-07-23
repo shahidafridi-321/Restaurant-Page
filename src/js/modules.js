@@ -26,10 +26,12 @@ export function putsContentInWelcomeSection() {
 // this function puts content inside the description section of the content container
 export function putsContentDescriptionSection() {
   let descriptionSection = document.querySelector('.description-section');
-  descriptionSection.innerHTML = `<h2>About Us</h2>
+  descriptionSection.innerHTML = `<h2>We Love To Serve You...</h2><h3>Bless us with a chance</h3>
       <p>At Gourmet Delighted, we offer an unforgettable dinning experience,combining exquisite cuisine, exceptional service, and a warm, inviting atmosphere. Our chefs usethe finest ingredients to create dishes that will tantalize your taste buds and leave you craving for more.
       </p>`;
 }
+
+
 
 // this function creates cards that has an image ,a title and description
 export function createCards(data) {
@@ -52,5 +54,4 @@ export function createCards(data) {
     cardsSection.appendChild(cardContainer);
 
   });
-
 }

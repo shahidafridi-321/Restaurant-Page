@@ -1,4 +1,4 @@
-import imag from '../src/images/homepage-bg.jpg'
+import imag from '../images/homepage-bg.jpg';
 
 export let cardsData = [
   {
@@ -18,4 +18,4 @@ export let cardsData = [
   }
 ];
 
-export let contentSections = ['welcome-section','description-section','cards-section'];
+export let contentSections = ['welcome-section','description-section','cards-section','preview-section'];

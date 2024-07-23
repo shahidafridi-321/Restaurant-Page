@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/index.js',
+    index: './src/js/index.js',
   },
   output: {
     filename: `[name].bundle.js`,
@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.html',
+      template: './src/html/index.html',
     }),
   ],
 
@@ -33,6 +33,10 @@ module.exports = {
         test:/\.css$/i,
         use:['style-loader','css-loader'],
       },
+      {
+        test:/\.(woff|woff2|ttf|)$/,
+        type: 'asset/resource',
+      }
 
     ],
   },

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: roboto-mono;
+  src: url('../fonts/RobotoMono-Italic-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: mom;
+  src: url('../fonts/mom.ttf');
+  font-weight: normal;
+  font-size: normal;
+}
+@font-face {
+  font-family: roboto;
+  src: url('../fonts/Roboto-Black.ttf');
+  font-weight: normal;
+  font-size: normal;
+}
+#content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-areas: 
+  "welcome-section description-section"
+  "cards-section  cards-section";
+  gap: 1rem;
+}
+
+.welcome-section {
+  grid-area: welcome-section;
+  text-align: center;
+  align-self: center;
+  border-bottom: 2px solid grey;
+  border-right: 2px solid grey;
+  padding-left: 30px;
+  transform: skewY(10deg);
+  margin-bottom: 50px;
+}
+.welcome-section h1 {
+  font-size: 4rem;
+  font-style: oblique;
+  margin: 50px 0 20px 0;
+  
+}
+.welcome-section p {
+  font-size: 2.6rem;
+  word-spacing: 15px;
+  margin: 25px 0 60px 0;
+  font-family:mom, serif;
+}
+.description-section {
+  grid-area: description-section;
+  text-align: center;
+  align-self: center;
+  padding-right: 30px;
+  transform: skewY(10deg);
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  font-family: roboto, serif;
+}
+.description-section h2 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+.description-section h3 {
+margin: 10px 0 10px 0;
+
+}
+.description-section p {
+  margin: 5px 0 5px 0;
+  font-family: roboto-mono,serif;
+  font-size: 1.3rem;
+}
+.cards-section {
+  grid-area: cards-section;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.cards-section .img {
+  border: 1px solid #000;
+  height: 200px;
+  max-width: 350px;
+  min-width: 150px;
+}
+.card{
+  max-width: 300px;
+  min-width: 175px;
+  flex: 1 1 calc(50% - 1rem);
+}
+.card img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
