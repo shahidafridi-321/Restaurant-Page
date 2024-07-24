@@ -117,3 +117,43 @@ export function putContentInBeveragesSection(){
         <span>$2.99</span>
       </div>`;
 }
+
+
+/////////////////////////////ABOUT PAGE //////////////////////
+
+export function putContentInAboutSection(){
+  let aboutSection = document.querySelector('.about-section');
+  aboutSection.innerHTML = `<h1>About Gourmet Delighted</h1>
+      <p>Welcome to Gourmet Delighted, where culinary artistry meets exceptional hospitality. Our restaurant is dedicated to providing a dining experience that delights all your senses.</p>
+`;
+}
+
+export function putContentInMissionSection(){
+  let missionSection = document.querySelector('.mission-section');
+  missionSection.innerHTML = `<h2>Our Mission</h2>
+      <p>At Gourmet Delighted, our mission is to offer exquisite cuisine, exceptional service, and a warm, inviting atmosphere. We strive to create memorable dining experiences that bring joy to our guests.</p>
+    `;
+ 
+}
+
+export function putContentInHistorySection(){
+  let historySection = document.querySelector('.history-section');
+  historySection.innerHTML = `<h2>Our History</h2>
+      <p>Founded in 2024, Gourmet Delighted has quickly become a favorite dining destination in the heart of the city. Our journey began with a passion for culinary excellence and a commitment to using the finest ingredients.</p>
+    `;
+}
+
+export function putContentInTeamSection(){
+  let teamSection = document.querySelector('.team-section');
+  teamSection.innerHTML = `<h2>Meet Our Team</h2>
+      <div class="team-card">
+        <img src="path-to-chef-image.jpg" alt="Chef">
+        <h3>Chef John Doe</h3>
+        <p>With over 20 years of experience, Chef John Doe brings creativity and expertise to our kitchen, crafting dishes that are both innovative and delicious.</p>
+      </div>
+      <div class="team-card">
+        <img src="path-to-manager-image.jpg" alt="Manager">
+        <h3>Jane Smith</h3>
+        <p>Our manager, Jane Smith, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.</p>
+      </div>`;
+}

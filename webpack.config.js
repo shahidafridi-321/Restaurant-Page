@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: './src/js/index.js',
     menu: './src/js/menu.js',
+    about:'./src/js/about.js',
   },
   output: {
     filename: '[name].bundle.js',
@@ -17,12 +18,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/html/index.html',
-      chunks: ['index'],  // Include only index.js
+      chunks: ['index'],  
     }),
     new HtmlWebpackPlugin({
       filename: 'menu.html',
       template: './src/html/menu.html',
-      chunks: ['menu'],  // Include only menu.js
+      chunks: ['menu'],  
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: './src/html/about.html',
+      chunks: ['about'],  
     }),
   ],
   module: {

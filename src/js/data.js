@@ -30,3 +30,5 @@ export let menuPageData = [
     price:'$8.99'
   },
 ];
+
+export let aboutSections = ['about-section','mission-section','history-section','team-section'];
