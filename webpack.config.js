@@ -8,20 +8,23 @@ module.exports = {
     menu: './src/js/menu.js',
   },
   output: {
-    filename: `[name].bundle.js`,
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   devtool: 'inline-source-map',
-
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/html/index.html',
+      chunks: ['index'],  // Include only index.js
     }),
-
+    new HtmlWebpackPlugin({
+      filename: 'menu.html',
+      template: './src/html/menu.html',
+      chunks: ['menu'],  // Include only menu.js
+    }),
   ],
-
   module: {
     rules: [
       {
@@ -36,10 +39,9 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(woff|woff2|ttf|)$/,
+        test: /\.(woff|woff2|ttf)$/i,
         type: 'asset/resource',
       }
-
     ],
   },
 };

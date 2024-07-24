@@ -18,7 +18,7 @@ export let cardsData = [
   }
 ];
 
-export let contentSections = ['welcome-section','description-section','cards-section','preview-section'];
+export let contentSections = ['welcome-section','description-section','cards-section'];
 
 export let menuPageSetions = ['appetizers','main-courses','desserts','beverages'];
 

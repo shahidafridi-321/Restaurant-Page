@@ -12,3 +12,14 @@ export function generateMenuPage(){
   putContentInBeveragesSection();
 }
 
+
+//selects the menu btn
+
+let menuBtn = document.querySelector('.menu-btn');
+menuBtn.addEventListener('click', () => {
+  let content = document.querySelector('#content');
+  content.innerHTML = '';
+  generateMenuPage();
+  content.classList.add('menu-page');
+  content.classList.remove('home-page');
+});

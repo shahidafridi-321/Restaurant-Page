@@ -16,7 +16,7 @@
   font-weight: normal;
   font-size: normal;
 }
-#content {
+.home-page {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-areas: 
@@ -85,9 +85,27 @@ margin: 10px 0 10px 0;
   min-width: 150px;
 }
 .card{
-  max-width: 300px;
-  min-width: 175px;
+  border: 2px solid grey;
+  padding: 1rem;
+  max-width: 400px;
+  border-radius: 10px;
   flex: 1 1 calc(50% - 1rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+.card:hover {
+  transform: translateY(-20px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Enhance shadow on hover */
+}
+.card h3{
+  font-size: 2.3rem;
+  font-family: roboto;
+  font-style: oblique;
+  color: #db9f9f;
+}
+.card p {
+  font-family: roboto-mono;
+  font-size: 1.3rem;
 }
 .card img {
   width: 100%;
