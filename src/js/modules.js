@@ -1,9 +1,10 @@
 
 // this funtion creates diffrent section in content container
-export function createContentSections(contentsecArray) {
-  let content = document.getElementById('content');
+export function createContentSections(contentsecArray,id) {
+  let content = document.getElementById(id);
   contentsecArray.forEach(element => {
     let section = document.createElement('section');
+    section.classList.add('menu-section');
     section.classList.add(element);
     content.appendChild(section);
   });
@@ -54,4 +55,65 @@ export function createCards(data) {
     cardsSection.appendChild(cardContainer);
 
   });
+}
+
+
+/////////////////////////////////////////////////MENU/////////////////////////////////////
+
+export function putContentInAppetizersSection(){
+  let appetizers = document.querySelector('.appetizers');
+  appetizers.innerHTML =`<h2>Appetizers</h2>
+      <div class="menu-item">
+        <h3>Bruschetta</h3>
+        <p>Grilled bread topped with a mixture of fresh tomatoes, garlic, basil, and olive oil.</p>
+        <span>$8.99</span>
+      </div>
+      <div class="menu-item">
+        <h3>Stuffed Mushrooms</h3>
+        <p>Mushrooms filled with a blend of cheeses, herbs, and breadcrumbs, baked to perfection.</p>
+        <span>$9.99</span>
+      </div>`;
+};
+
+export function putContentInMainCursesSection(){
+  let mainCourses = document.querySelector('.main-courses');
+  mainCourses.innerHTML = `<h2>Main Courses</h2>
+      <div class="menu-item">
+        <h3>Grilled Salmon</h3>
+        <p>Fresh salmon fillet grilled and served with a lemon-dill sauce and seasonal vegetables.</p>
+        <span>$18.99</span>
+      </div>
+      <div class="menu-item">
+        <h3>Ribeye Steak</h3>
+        <p>Juicy ribeye steak cooked to your liking, served with garlic mashed potatoes and steamed broccoli.</p>
+        <span>$24.99</span>
+      </div>`;
+}
+export function putContentInDessertsSection(){
+  let desserts = document.querySelector('.desserts');
+  desserts.innerHTML = `<h2>Desserts</h2>
+      <div class="menu-item">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Rich chocolate cake with a molten chocolate center, served with vanilla ice cream.</p>
+        <span>$7.99</span>
+      </div>
+      <div class="menu-item">
+        <h3>Cheesecake</h3>
+        <p>Creamy cheesecake with a graham cracker crust, topped with a strawberry glaze.</p>
+        <span>$6.99</span>
+      </div>`;
+}
+export function putContentInBeveragesSection(){
+  let beverages = document.querySelector('.beverages');
+  beverages.innerHTML = `<h2>Beverages</h2>
+      <div class="menu-item">
+        <h3>Fresh Lemonade</h3>
+        <p>Refreshing lemonade made with freshly squeezed lemons and a hint of mint.</p>
+        <span>$3.99</span>
+      </div>
+      <div class="menu-item">
+        <h3>Espresso</h3>
+        <p>Rich and smooth espresso, made from premium coffee beans.</p>
+        <span>$2.99</span>
+      </div>`;
 }

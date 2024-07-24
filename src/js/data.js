@@ -19,3 +19,14 @@ export let cardsData = [
 ];
 
 export let contentSections = ['welcome-section','description-section','cards-section','preview-section'];
+
+export let menuPageSetions = ['appetizers','main-courses','desserts','beverages'];
+
+export let menuPageData = [
+  {
+    title:'Appetizers',
+    name:'Bruschetta',
+    description:'Grilled bread topped with a mixture of fresh tomatoes, garlic, basil, and olive oil.',
+    price:'$8.99'
+  },
+];

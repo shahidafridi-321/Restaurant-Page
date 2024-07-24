@@ -4,9 +4,8 @@ import '../css/commomStyle.css';
 import '../css/home.css';
 
 export function initialPageLoad() {
-  createContentSections(contentSections);
+  createContentSections(contentSections,'content');
   putsContentInWelcomeSection();
   putsContentDescriptionSection();
   createCards(cardsData);
-
 }
