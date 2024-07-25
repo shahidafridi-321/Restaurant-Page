@@ -11,3 +11,5 @@ export function generateAboutPage (){
   putContentInHistorySection();
   putContentInTeamSection();
 }
+
+

@@ -1,18 +1,21 @@
-import imag from '../images/homepage-bg.jpg';
+
+import signatureDishes from '../images/signature-dishes.jpg';
+import scozyArea from '../images/cozy.jpg';
+import service from '../images/service.jpg';
 
 export let cardsData = [
   {
-    image: `${imag}`,
+    image: `${signatureDishes}`,
     title: 'Our Signature Dishes',
     description: 'Experience a vareity of flavors with our signature dishes, meticulously crafted to perfection.',
   },
   {
-    image: `${imag}`,
+    image: `${scozyArea}`,
     title: 'Cozy Ambiance',
     description: 'Relax in our cozy and elegant dining area, designed to provide a comfortable and enjoyable experience.',
   },
   {
-    image: `${imag}`,
+    image: `${service }`,
     title: 'Exceptional Service',
     description: 'Our friendly and attentive staff are here to ensure that your dining experience is nothing short of exceptional.',
   }

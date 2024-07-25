@@ -14,6 +14,7 @@ homeBtn.addEventListener('click', () => {
   content.innerHTML = '';
   initialPageLoad();
   content.classList.remove('menu-page');
+  content.classList.remove('about-page');
   content.classList.add('home-page');
 });
 

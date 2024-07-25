@@ -119,6 +119,8 @@ export function putContentInBeveragesSection(){
 }
 
 
+
+
 /////////////////////////////ABOUT PAGE //////////////////////
 
 export function putContentInAboutSection(){
@@ -143,17 +145,18 @@ export function putContentInHistorySection(){
     `;
 }
 
+import ceo from '../images/ceo.jpg';
+import manager from '../images/manager.jpg';
 export function putContentInTeamSection(){
   let teamSection = document.querySelector('.team-section');
-  teamSection.innerHTML = `<h2>Meet Our Team</h2>
-      <div class="team-card">
-        <img src="path-to-chef-image.jpg" alt="Chef">
-        <h3>Chef John Doe</h3>
-        <p>With over 20 years of experience, Chef John Doe brings creativity and expertise to our kitchen, crafting dishes that are both innovative and delicious.</p>
+  teamSection.innerHTML = `<div class="team-card">
+        <img src="${ceo}" alt="Chef">
+        <h3>Karolina Kaboomp</h3>
+        <p>With over 20 years of experience, Chef Karolina Kaboomp brings creativity and expertise to our kitchen, crafting dishes that are both innovative and delicious.</p>
       </div>
       <div class="team-card">
-        <img src="path-to-manager-image.jpg" alt="Manager">
-        <h3>Jane Smith</h3>
-        <p>Our manager, Jane Smith, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.</p>
+        <img src="${manager}" alt="Manager">
+        <h3>Edmond Dantès</h3>
+        <p>Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.</p>
       </div>`;
 }

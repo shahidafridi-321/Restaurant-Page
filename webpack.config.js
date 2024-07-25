@@ -5,8 +5,6 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/js/index.js',
-    menu: './src/js/menu.js',
-    about:'./src/js/about.js',
   },
   output: {
     filename: '[name].bundle.js',
@@ -19,16 +17,6 @@ module.exports = {
       filename: 'index.html',
       template: './src/html/index.html',
       chunks: ['index'],  
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'menu.html',
-      template: './src/html/menu.html',
-      chunks: ['menu'],  
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'about.html',
-      template: './src/html/about.html',
-      chunks: ['about'],  
     }),
   ],
   module: {
