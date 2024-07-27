@@ -102,4 +102,44 @@ export let aboutSectionsData = [
     title:'Our History',
     description:'Founded in 2024, Gourmet Delighted has quickly become a favorite dining destination in the heart of the city. Our journey began with a passion for culinary excellence and a commitment to using the finest ingredients.'
   },
+  [
+    {
+      image:ceo,
+      title:'Karolina Kaboomp',
+      description:'With over 20 years of experience, Chef Karolina Kaboomp brings creativity and expertise to our kitchen, crafting dishes that are both innovative and delicious.'
+    },
+   ,
+    {
+      image:manager,
+      title:'Edmond Dantès',
+      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
+    },
+   ,
+    {
+      image:manager,
+      title:'Edmond Dantès',
+      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
+    },
+   ,
+    {
+      image:manager,
+      title:'Edmond Dantès',
+      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
+    },
+   ,
+    {
+      image:manager,
+      title:'Edmond Dantès',
+      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
+    },
+    {
+      image:manager,
+      title:'Edmond Dantès',
+      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
+    }
+    
+  ],
 ];
+
+import ceo from '../images/ceo.jpg';
+import manager from '../images/manager.jpg';
