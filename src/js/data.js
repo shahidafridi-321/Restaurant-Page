@@ -110,33 +110,12 @@ export let aboutSectionsData = [
     },
    ,
     {
+      
       image:manager,
       title:'Edmond Dantès',
       description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
     },
-   ,
-    {
-      image:manager,
-      title:'Edmond Dantès',
-      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
-    },
-   ,
-    {
-      image:manager,
-      title:'Edmond Dantès',
-      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
-    },
-   ,
-    {
-      image:manager,
-      title:'Edmond Dantès',
-      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
-    },
-    {
-      image:manager,
-      title:'Edmond Dantès',
-      description:'Our manager, Edmond Dantès, ensures that every guest enjoys a seamless and memorable dining experience with her impeccable attention to detail.'
-    }
+   
     
   ],
 ];
