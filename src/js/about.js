@@ -20,7 +20,6 @@ function createContentInAboutPage(data) {
       data[index].forEach((item,i) =>{
         let div = document.createElement('div');
         div.classList.add('team-card');
-        
         div.innerHTML = `
       <img src="${data[index][i].image}" alt="Chef">
       <h3>${data[index][i].title}</h3>
